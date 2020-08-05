@@ -1,9 +1,11 @@
 @charset "UTF-8";
 body {
-  　color: #333; }
+  　color: #797575;
+  background-color: #e8ecef; }
 
 html {
-  font-family: Helvetica-Light, HiraginoSans-W2; }
+  font-family: Helvetica-Light, HiraginoSans-W2;
+  font-size: 62.5%; }
 
 .nightMode {
   background-color: #141313; }
@@ -11,15 +13,94 @@ html {
     color: #fff; }
 
 p {
-  line-height: 1.5; }
+  line-height: 1.5;
+  font-size: 1.6rem;
+  text-align: justify; }
+
+h1, h2, h3 {
+  font-size: 2.5rem;
+  font-weight: 200; }
 
 a {
-  color: #333; }
+  color: #333;
+  text-decoration: none; }
 
-.container,
 header {
-  width: 300px;
-  margin: 0 auto; }
+  background-color: #fff;
+  width: 100%;
+  -webkit-box-shadow: 3px 3px 2px #bcb6b6;
+  box-shadow: 3px 3px 2px #bcb6b6; }
+  header .logo {
+    border-bottom: 1px solid #bcb6b6;
+    padding: 20px; }
+  header ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+  header li {
+    padding: 20px 30px;
+    list-style: none;
+    letter-spacing: 1px;
+    font-size: 2rem; }
+
+.greetings {
+  padding: 20px 0;
+  margin: 0 20px;
+  border-bottom: 1px solid #bfbdbd; }
+  .greetings h2 {
+    margin-bottom: 20px; }
+
+.timeline {
+  padding: 20px;
+  position: relative; }
+  .timeline::before {
+    content: '';
+    width: 50px;
+    height: 100%;
+    position: absolute;
+    border-left: 5px solid #dbd1d1;
+    top: 16px;
+    left: 48px;
+    z-index: -1;
+    margin: 50px 0; }
+  .timeline .year {
+    font-size: 2rem;
+    padding-left: 10px; }
+
+.text {
+  background-color: #fff;
+  padding: 30px 15px;
+  border-radius: 5px;
+  margin: 20px 0 20px 50px; }
+
+.works-item {
+  position: relative; }
+  .works-item .icon {
+    position: absolute;
+    border-radius: 90%;
+    width: 16px;
+    height: 16px;
+    background-color: #444;
+    left: 22px;
+    top: 128px; }
+  .works-item .start-icon {
+    position: absolute;
+    padding: 10px;
+    background-color: #269ba0;
+    font-size: 2rem;
+    top: -59px;
+    left: 0;
+    color: #fff;
+    letter-spacing: 1px; }
+  .works-item img {
+    width: 300px;
+    margin: 20px 0; }
+
+.works-item:nth-of-type(1) {
+  margin-top: 80px; }
 
 footer small {
   font-size: x-small;
