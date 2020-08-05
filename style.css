@@ -62,15 +62,19 @@ header {
     height: 100%;
     position: absolute;
     border-left: 5px solid #dbd1d1;
-    top: 16px;
+    top: 0;
     left: 48px;
     z-index: -1;
     margin: 50px 0; }
   .timeline .year {
-    font-size: 2rem;
-    padding-left: 10px; }
+    font-size: 1.4rem;
+    padding: 11px;
+    margin: 0 0 20px 5px;
+    background-color: #36afb9;
+    color: #fff;
+    display: inline-block; }
 
-.text {
+.description {
   background-color: #fff;
   padding: 30px 15px;
   border-radius: 5px;
@@ -86,21 +90,8 @@ header {
     background-color: #444;
     left: 22px;
     top: 128px; }
-  .works-item .start-icon {
-    position: absolute;
-    padding: 10px;
-    background-color: #269ba0;
-    font-size: 2rem;
-    top: -59px;
-    left: 0;
-    color: #fff;
-    letter-spacing: 1px; }
   .works-item img {
-    width: 300px;
-    margin: 20px 0; }
-
-.works-item:nth-of-type(1) {
-  margin-top: 80px; }
+    width: 300px; }
 
 footer small {
   font-size: x-small;
