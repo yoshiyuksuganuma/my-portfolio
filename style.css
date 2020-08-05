@@ -1,0 +1,26 @@
+@charset "UTF-8";
+body {
+  　color: #333; }
+
+html {
+  font-family: Helvetica-Light, HiraginoSans-W2; }
+
+.nightMode {
+  background-color: #141313; }
+  .nightMode p {
+    color: #fff; }
+
+p {
+  line-height: 1.5; }
+
+a {
+  color: #333; }
+
+.container,
+header {
+  width: 300px;
+  margin: 0 auto; }
+
+footer small {
+  font-size: x-small;
+  display: block; }

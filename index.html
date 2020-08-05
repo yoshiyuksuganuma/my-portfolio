@@ -2,17 +2,80 @@
 <html lang="ja">
 <head>
  <meta charset="UTF-8">
- <title>yoshiyuki suganuma 菅沼 良行 | my-portfolio</title>
+ <title>yoshiyuki suganuma 菅沼 良行 | My portfolio</title>
  <meta name=”description” content=”このサイトはいままで私が制作、携わったサイトを紹介するポートフォリオサイトです。”>
  <meta name="viewport" content="width=device-width,initial-scale=1">
- <link rel="stylesheet" href="css/reset.css">
- <link rel="stylesheet" href="css/style.css">
+ <link rel="stylesheet" href="reset.css">
+ <link rel="stylesheet" href="style.css">
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 </head>
 <body>
- <h1>portfoliofff</h1>
+ <header> 
+ <div> 
+ <h1 class="logo">My Portfolio</h1>
+ </div>
+ <nav>
+  <ul>
+   <li><a href="Works">Works</a></li>
+   <li><a href="Skill">Skills</a></li>
+   <li><a href="contact">Contact</a></li>
+  </ul>
+ </nav>
+</header>
+ <div class="container">
+  <h2>Web Developer</h2>
+  <p>こんにちわ、菅沼良行と申します。私のポートフォリオへお越しいただき誠にありがとうございます。2017年から約3年間、独学でWEB制作について勉強してきました。このページではいままで製作、携わったWebサイトを紹介しています。</p>
+  <section class="works">
+   <h2>Works</h2>
+  <div class="works1"></div>
+  <div class="works2"></div>
+  <div class="works3"></div>
+  <div class="works4"></div>
+  <div class="works5"></div>
+  </section>
+  
+  <section class="skills">
+   <h2>Skills</h2>
+  </section>
+  
+  <section class="contact">
+   <h2>Contact</h2>
+  </section>
+  
+  <footer>
+   <small>
+    <p>©️Yoshiyuki Suganuma All Right Reserved <span></span></p>
+    <p>Designed And Coded by Yoshiyuki Suganuma</p>
+   </small>
+  </footer>
+  
+  
+  </div>
  
-
+ <script>
+  $(function(){
+   'use strict';
+   
+   let d = new Date(),
+       hour = d.getHours(),
+       year = d.getFullYear();
+   
+   /*
+   if(hour >= 18 || hour <= 6) {
+    $('body').addClass('nightMode');
+   } else {
+    $('body').removeClass('nightMode');
+   }
+   
+   $('footer span').text(year);
+   console.log(hour);
+   */
+   
+  });
+ 
+  </script>
+ 
+  
 
 </body>
 </html>
