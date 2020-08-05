@@ -7,6 +7,12 @@ html {
   font-family: Helvetica-Light, HiraginoSans-W2;
   font-size: 62.5%; }
 
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
 .nightMode {
   background-color: #141313; }
   .nightMode p {
@@ -79,6 +85,8 @@ header {
   padding: 30px 15px;
   border-radius: 5px;
   margin: 20px 0 20px 50px; }
+  .description a {
+    word-wrap: break-word; }
 
 .works-item {
   position: relative; }
@@ -91,7 +99,8 @@ header {
     left: 22px;
     top: 128px; }
   .works-item img {
-    width: 300px; }
+    width: 300px;
+    display: block; }
 
 footer small {
   font-size: x-small;

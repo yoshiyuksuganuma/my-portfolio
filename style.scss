@@ -8,6 +8,12 @@ font-family: Helvetica-Light, HiraginoSans-W2;
 font-size: 62.5%;
 }
 
+*,
+*::after,
+*::before {
+ box-sizing: border-box;
+}
+
 .nightMode {
  background-color: #141313;
  p {
@@ -95,7 +101,9 @@ header {
  padding: 30px 15px;
  border-radius: 5px;
  margin: 20px 0 20px 50px;
- 
+ a {
+  word-wrap: break-word;
+ }
 }
 
 .works-item {
@@ -111,6 +119,7 @@ header {
  }
  img {
   width: 300px;
+  display: block; 
  }
 }
 
