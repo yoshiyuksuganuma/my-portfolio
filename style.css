@@ -27,6 +27,10 @@ h1, h2, h3 {
   font-size: 2.5rem;
   font-weight: 200; }
 
+.site-title {
+  margin-bottom: 20px;
+  line-height: 1.5; }
+
 a {
   color: #333;
   text-decoration: none; }
