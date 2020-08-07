@@ -1,7 +1,9 @@
-@charset "UTF-8";
 body {
-  　color: #797575;
-  background-color: #e8ecef; }
+  color: #797575;
+  background-color: #e8ecef;
+  -webkit-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s; }
 
 html {
   font-family: Helvetica-Light, HiraginoSans-W2;
@@ -13,9 +15,12 @@ html {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
-.nightMode {
-  background-color: #141313; }
-  .nightMode p {
+.night-mode {
+  background-color: #141313;
+  -webkit-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s; }
+  .night-mode p {
     color: #fff; }
 
 p {
@@ -23,7 +28,9 @@ p {
   font-size: 1.6rem;
   text-align: left; }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-size: 2.5rem;
   font-weight: 200; }
 
@@ -41,10 +48,16 @@ header {
   background-color: #fff;
   width: 100%;
   -webkit-box-shadow: 3px 3px 2px #bcb6b6;
-  box-shadow: 3px 3px 2px #bcb6b6; }
+  box-shadow: 3px 3px 2px #bcb6b6;
+  position: fixed;
+  z-index: 2;
+  -webkit-transform: translatex(-50%);
+  -ms-transform: translatex(-50%);
+  transform: translatex(-50%);
+  left: 50%; }
   header .logo {
     border-bottom: 1px solid #bcb6b6;
-    padding: 20px; }
+    padding: 12px 20px; }
   header ul {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -53,7 +66,7 @@ header {
     -ms-flex-pack: center;
     justify-content: center; }
   header li {
-    padding: 20px 30px;
+    padding: 15px 25px;
     list-style: none;
     letter-spacing: 1px;
     font-size: 2rem; }
@@ -86,7 +99,9 @@ header {
     display: inline-block; }
 
 .wrap {
-  padding: 0 20px; }
+  padding: 130px 20px 0 20px;
+  max-width: 580px;
+  margin: 0 auto; }
 
 .description {
   background-color: #fff;
@@ -113,7 +128,6 @@ header {
 .skills {
   padding: 10px 0;
   margin: 15px 0;
-  border-bottom: 1px solid #bcb6b6;
   border-top: 1px solid #bcb6b6; }
   .skills h2 {
     margin-bottom: 5px; }
@@ -129,7 +143,8 @@ header {
 
 .contact {
   padding: 10px 0;
-  margin: 15px 0; }
+  margin: 15px 0;
+  border-top: 1px solid #bcb6b6; }
   .contact .qr-image {
     width: 100px;
     margin-right: 10px; }
@@ -140,8 +155,19 @@ header {
   .contact h2 {
     margin-bottom: 10px; }
 
+.light-btn {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  bottom: 100px;
+  right: 100px;
+  background-color: blue; }
+
 footer {
-  padding: 0 20px; }
+  padding: 20px;
+  max-width: 580px;
+  margin: 0 auto; }
   footer small {
-    font-size: x-small;
     display: block; }
+  footer p {
+    font-size: 1.3rem; }
