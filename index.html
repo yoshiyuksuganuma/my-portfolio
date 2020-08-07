@@ -9,13 +9,17 @@
  <link rel="stylesheet" href="reset.css">
  <link rel="stylesheet" href="style.css">
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+ <script src="https://kit.fontawesome.com/775a7bca63.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
 
  <header>
-  <div>
+  <div class="header-top">
    <h1 class="logo">My Portfolio</h1>
+    <button class="light-btn" id="light-btn" type="button">
+    <i class="far fa-lightbulb"></i>
+   </button>
   </div>
   <nav>
    <ul>
@@ -160,9 +164,7 @@
 
  </div>
  
- <div class="light-btn" id="light-btn">
-  
- </div>
+ 
 
  <footer>
   <small>
@@ -181,15 +183,15 @@
     hour = d.getHours(),
     year = d.getFullYear();
 
-   /*
+   
    if(hour >= 18 || hour <= 6) {
-    $('body').addClass('nightMode');
+    $('body').addClass('night-mode');
    } else {
-    $('body').removeClass('nightMode');
+    $('body').removeClass('night-mode');
    }
-    */
+    
    $('#year').text(year);
-   console.log(hour);
+   
    
    $('#light-btn').on('click',function(){
     $('body').toggleClass('night-mode');

@@ -19,8 +19,33 @@ html {
  background-color: #141313;
  transition: all .5s;
  p {
-  color: #fff;
+  color: #ded2d2;
 
+ }
+ .site-title {
+  color: #fff;
+  text-shadow: 1px 2px 7px #fff;
+ }
+ 
+ header {
+  
+  background-color: #676565;
+  .light-btn {
+   background-color: #fff;
+  }
+  
+  i {
+   color: #333;
+  }
+  .logo,
+  a {
+   color: #efebeb;
+  }
+  
+ }
+ 
+ .description {
+  background-color: #4b4848;
  }
 
 }
@@ -60,9 +85,32 @@ header {
  z-index: 2;
   transform: translatex(-50%);
  left: 50%;
+ .header-top {
+  position: relative;
+ }
  .logo {
   border-bottom: 1px solid #bcb6b6;
   padding: 12px 20px;
+ }
+ 
+ .light-btn {
+ border: none;
+ outline: none;
+ border-radius: 90%;
+ width: 43px;
+ height: 43px;
+ position: absolute;
+ background-color:  #08a7a7;
+  
+  top: 3px;
+  right: 5px;
+}
+ 
+ i {
+  font-size: 2.5rem;
+  color: #fff;
+  
+  line-height: 25;
  }
 
  ul {
@@ -197,14 +245,7 @@ header {
  }
 }
 
- .light-btn{
- position: fixed;
- width: 50px;
- height: 50px;
- bottom: 100px;
- right: 100px;
- background-color: blue;
-}
+  
 
 footer {
  padding: 20px;

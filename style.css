@@ -21,7 +21,21 @@ html {
   -o-transition: all .5s;
   transition: all .5s; }
   .night-mode p {
-    color: #fff; }
+    color: #ded2d2; }
+  .night-mode .site-title {
+    color: #fff;
+    text-shadow: 1px 2px 7px #fff; }
+  .night-mode header {
+    background-color: #676565; }
+    .night-mode header .light-btn {
+      background-color: #fff; }
+    .night-mode header i {
+      color: #333; }
+    .night-mode header .logo,
+    .night-mode header a {
+      color: #efebeb; }
+  .night-mode .description {
+    background-color: #4b4848; }
 
 p {
   line-height: 1.5;
@@ -55,9 +69,25 @@ header {
   -ms-transform: translatex(-50%);
   transform: translatex(-50%);
   left: 50%; }
+  header .header-top {
+    position: relative; }
   header .logo {
     border-bottom: 1px solid #bcb6b6;
     padding: 12px 20px; }
+  header .light-btn {
+    border: none;
+    outline: none;
+    border-radius: 90%;
+    width: 43px;
+    height: 43px;
+    position: absolute;
+    background-color: #08a7a7;
+    top: 3px;
+    right: 5px; }
+  header i {
+    font-size: 2.5rem;
+    color: #fff;
+    line-height: 25; }
   header ul {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -154,14 +184,6 @@ header {
     display: inline-block; }
   .contact h2 {
     margin-bottom: 10px; }
-
-.light-btn {
-  position: fixed;
-  width: 50px;
-  height: 50px;
-  bottom: 100px;
-  right: 100px;
-  background-color: blue; }
 
 footer {
   padding: 20px;
