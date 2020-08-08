@@ -1,5 +1,5 @@
 body {
- color: #797575;
+  
  background-color: #e8ecef;
  transition: all .5s;
 }
@@ -16,19 +16,25 @@ html {
 }
 
 h2 {
- color: #fff;
+ color: #333;
 }
 
 .night-mode {
  background-color: #141313;
  transition: all .5s;
+ a {
+  color: #959393;
+ }
+ h2 {
+ color: #fff;
+}
  p {
   color: #ded2d2;
 
  }
  .site-title {
   color: #fff;
-  text-shadow: 1px 2px 7px #fff;
+  
  }
  
  header {
@@ -51,6 +57,21 @@ h2 {
  .description {
   background-color: #4b4848;
  }
+ 
+ .skills {
+  span {
+   background-color: #1c2529;
+  }
+ }
+ .timeline {
+  .year {
+  background-color: #111f1a;
+ }
+ }
+ small p {
+  color: #959393;
+  
+ }
 
 }
 
@@ -60,6 +81,7 @@ p {
  line-height: 1.5;
  font-size: 1.6rem;
  text-align: left;
+ color: #585656;
 }
 
 h1,
@@ -98,13 +120,15 @@ header {
  }
  
  .light-btn {
- border: none;
- outline: none;
- border-radius: 90%;
- width: 43px;
- height: 43px;
- position: absolute;
- background-color:  #08a7a7;
+  border: none;
+    outline: none;
+    border-radius: 90%;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    background-color: #08a7a7;
+    top: 4px;
+    right: 7px;
   
   top: 3px;
   right: 5px;
@@ -197,6 +221,7 @@ header {
   background-color: #444;
   left: 22px;
   top: 128px;
+  Z-index: 99999;
  }
 
  img {
@@ -216,9 +241,9 @@ header {
  }
 
  span {
-  font-size: 1.8rem;
-  background-color: #09b9b9;
-  color: #333;
+  font-size: 1.6rem;
+  background-color: #06335a;
+  color: #fff;
   padding: 4px 10px;
   display: inline-block;
   border-radius: 100px;

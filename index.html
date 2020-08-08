@@ -8,6 +8,7 @@
  <meta name="viewport" content="width=device-width,initial-scale=1">
  <link rel="stylesheet" href="reset.css">
  <link rel="stylesheet" href="style.css">
+ <script src="rellax.min.js"></script>
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
  <script src="https://kit.fontawesome.com/775a7bca63.js" crossorigin="anonymous"></script>
 </head>
@@ -41,7 +42,7 @@
 
     <div class="works-item">
 
-     <div class="icon"></div>
+     <div class="icon rellax"></div>
 
 
 
@@ -196,6 +197,11 @@
    $('#light-btn').on('click',function(){
     $('body').toggleClass('night-mode');
    });
+   
+   var rellax = new Rellax('.rellax', {
+  speed: -6.4,
+  center: false, 
+    }); 
 
   });
 
