@@ -108,7 +108,7 @@ header {
  width: 100%;
  box-shadow: 3px 3px 2px #bcb6b6;
  position: fixed;
- z-index: 2;
+ z-index: 4;
   transform: translatex(-50%);
  left: 50%;
  .header-top {
@@ -212,16 +212,28 @@ header {
 
 .works-item {
  position: relative;
-
- .icon {
-  position: absolute;
-  border-radius: 90%;
+ .icon-parent {
+  position: fixed;
   width: 16px;
   height: 16px;
-  background-color: #444;
+ }
+ .icon-wrap {
+  position: relative;
+   
+  width: 16px;
+  height: 16px;
+  
   left: 22px;
   top: 128px;
-  Z-index: 99999;
+  Z-index: 3;
+ }
+
+ .icon {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+   background-color: #444;
+  border-radius: 90%;
  }
 
  img {

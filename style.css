@@ -76,7 +76,7 @@ header {
   -webkit-box-shadow: 3px 3px 2px #bcb6b6;
   box-shadow: 3px 3px 2px #bcb6b6;
   position: fixed;
-  z-index: 2;
+  z-index: 4;
   -webkit-transform: translatex(-50%);
   -ms-transform: translatex(-50%);
   transform: translatex(-50%);
@@ -157,15 +157,23 @@ header {
 
 .works-item {
   position: relative; }
-  .works-item .icon {
-    position: absolute;
-    border-radius: 90%;
+  .works-item .icon-parent {
+    position: fixed;
+    width: 16px;
+    height: 16px; }
+  .works-item .icon-wrap {
+    position: relative;
     width: 16px;
     height: 16px;
-    background-color: #444;
     left: 22px;
     top: 128px;
-    Z-index: 99999; }
+    Z-index: 3; }
+  .works-item .icon {
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    background-color: #444;
+    border-radius: 90%; }
   .works-item img {
     width: 300px;
     display: block; }
