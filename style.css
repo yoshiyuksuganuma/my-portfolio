@@ -166,8 +166,8 @@ header {
     width: 16px;
     height: 16px;
     left: 22px;
-    top: 128px;
-    Z-index: 3; }
+    top: 235px;
+    Z-index: -1; }
   .works-item .icon {
     width: 16px;
     height: 16px;
