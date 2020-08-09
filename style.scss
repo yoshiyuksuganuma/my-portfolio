@@ -5,7 +5,10 @@ body {
 }
 
 html {
- font-family: Helvetica-Light, HiraginoSans-W2;
+  
+    font-family:
+        'M+ C Type-1 (basic latin) Light',
+        'M+ Type-1 (general-j) Regular', sans-serif;
  font-size: 62.5%;
 }
 
@@ -127,11 +130,13 @@ header {
     height: 40px;
     position: absolute;
     background-color: #08a7a7;
-    top: 4px;
-    right: 7px;
+    top: 3px;
+    right: 15px;
   
-  top: 3px;
-  right: 5px;
+  
+  
+   
+  
 }
  
  i {
@@ -190,6 +195,9 @@ header {
   display: inline-block;
  }
 }
+
+
+
 
 
 
@@ -263,6 +271,8 @@ header {
   letter-spacing: 1px;
  }
 }
+
+
 
 .contact {
  padding: 10px 0;
