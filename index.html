@@ -204,6 +204,16 @@
     $('body').toggleClass('night-mode');
    });
    
+   $('.description').find('a').on('click',function(e){
+    let hr = $(this).attr('href'),
+        result = window.confirm(`${hr}\nを開きますか？`);
+    if(result) {
+      $(this).location.href;
+    } else {
+     e.preventDefault();
+    }
+   });
+   
    var rellax = new Rellax('.rellax', {
   speed: 0.6,
   center: false, 
